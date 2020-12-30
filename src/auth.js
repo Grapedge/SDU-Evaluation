@@ -14,7 +14,7 @@ const getLoginData = async url => {
 };
 
 const login = async (username, password, from) => {
-  const url = `http://passt.sdu.edu.cn/cas/login?service=${from}`;
+  const url = `http://pass.sdu.edu.cn/cas/login?service=${from}`;
   // get cookie and other datas
   const { lt, _eventId, execution } = await getLoginData(url);
   // login
